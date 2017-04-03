@@ -1,0 +1,73 @@
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true",
+    "Eventos": {
+      "Informacion": {
+        ".indexOn": [
+          "estado"
+        ]
+      },
+      "Agendas": {
+        "$uid": {
+          ".indexOn": [
+            "estado"
+          ]
+        }
+      },
+      "Preguntas": {
+        "$uid": {
+          "$uid": {
+            ".indexOn": [
+              "estado"
+            ]
+          }
+        }
+      },
+      "Mensajes": {
+        "$uid": {
+          "Header": {
+            ".indexOn": [
+              "estado"
+            ]
+          },
+          "Popup": {
+            ".indexOn": [
+              "estado"
+            ]
+          },
+          "Footer": {
+            ".indexOn": [
+              "estado"
+            ]
+          }
+        }
+      }
+    },
+    "Patrocinadores": {
+      "Informacion": {
+        ".indexOn": [
+          "estado"
+        ]
+      }
+    },
+    "Conferencistas": {
+      "Recursos": {
+        "$uid": {
+          ".indexOn": [
+            "estado"
+          ]
+        }
+      }
+    },
+    "Usuarios": {
+      ".indexOn": [
+        "email",
+        "sorteado",
+        "documento",
+        "networking",
+        "id"
+      ]
+    }
+  }
+}
